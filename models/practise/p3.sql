@@ -1,0 +1,1 @@
+SELECT *,{{extract_month('created_at')}} as date_month FROM {{ref('p1')}}
