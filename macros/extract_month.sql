@@ -2,4 +2,4 @@
 
     date_trunc('month',{{column_name}})
     
-{% endmacro %}
+{% endmacro %} 
