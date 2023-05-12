@@ -1,1 +1,1 @@
-select * from {{ref(p3)}}
+select * from {{ref('p3')}}
