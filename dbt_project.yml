@@ -47,7 +47,7 @@ models:
     Src:
       +materialized: ephemeral
     practise:
-      schema: new_schema
+      +schema: new_schema
 
 seeds:
   dbtlearn:

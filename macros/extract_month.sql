@@ -1,5 +1,5 @@
 {% macro extract_month(column_name) %}
 
-    date_trunc({{column_name}},'month')
+    date_trunc('month',{{column_name}})
     
 {% endmacro %}
