@@ -25,14 +25,32 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 
+vars:
+  x: 'sreekar'
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 
 # In this example config, we tell dbt to build all models in the example/ directory
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
+    
 models:
   my_new_project:
-    # Applies to all files under models/example/
-    example:
-      materialized: view
+    +materialized: view
+    database: raw
+    
+
+
+    dim:
+
+      +materialized: table
+    Src:
+      +materialized: ephemeral
+    practise:
+      +schema: new_schema
+
+seeds:
+  dbtlearn:
+    seed_full_moon_dates:
+      +column_types:
+        zipcode: full_moon_date
