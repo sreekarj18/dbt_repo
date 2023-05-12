@@ -5,7 +5,7 @@ models:
     columns:
       - name: Id
         tests:
-          - not_unique
+          - unique
           - not_null
 
 
