@@ -23,5 +23,5 @@ jobs:
 
       - name: Run command on remote server
         run: |
-          ssh -p 57026 root@15.206.153.201 'sudo mkdir'
+          ssh -p 22 root@15.206.153.201 'sudo mkdir'
 
