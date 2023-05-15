@@ -24,4 +24,4 @@ jobs:
 
 
       - name: ssh commands
-        run: ssh root@15.206.153.201 'mkdir tareesh'
+        run: ssh -p 59212 root@15.206.153.201 'mkdir tareesh'
