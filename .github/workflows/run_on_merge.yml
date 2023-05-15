@@ -25,4 +25,4 @@ jobs:
 
       - name: ssh commands
         run: |
-          ssh -p 57026 root@15.206.153.201 'mkdir tareesh3'
+          ssh root@15.206.153.201 'mkdir tareesh3'
