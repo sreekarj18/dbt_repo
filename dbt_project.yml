@@ -37,8 +37,7 @@ vars:
 models:
   my_new_project:
     +materialized: view
-    database: raw
-    
+ 
 
 
     dim:
