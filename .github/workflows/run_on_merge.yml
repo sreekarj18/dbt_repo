@@ -23,6 +23,7 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           cd /workspace/dbt_core_container/dbt_learn
+          git clean -f
           git checkout main
           git fetch
           git pull origin main
