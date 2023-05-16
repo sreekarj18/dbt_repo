@@ -21,5 +21,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        script: mkdir /tareesh/hero2
+        script: |
+          cd /workspace/dbt_core_container/dbt_learn
+          dbt run --select p1
 
