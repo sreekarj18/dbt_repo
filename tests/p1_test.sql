@@ -1,1 +1,0 @@
-select * from {{ref('p1')}} where created_at is not null
