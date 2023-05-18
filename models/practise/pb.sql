@@ -1,1 +1,1 @@
-select * form {{ref('pa')}}
+select * from {{ref('pa')}}
